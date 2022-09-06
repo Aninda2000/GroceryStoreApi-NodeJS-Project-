@@ -7,7 +7,7 @@ const db=require('./config/mongoose');
 //use the body
 app.use(express.urlencoded({extended:true}));
 
-app.use('/', require('./routes/index'));//redirect any routes to routes folder
+app.use('/', require('./routes'));//redirect any routes to routes folder
 
 app.listen(port, function (err) {
   if (err) {
