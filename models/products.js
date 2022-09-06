@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema(
   {
-    productCategory: {
+    productCatagory: {
       type: String,
       required: true,
     },
-    productInfo: {
+    productName: {
       type: String,
       required: true,
     },
@@ -14,10 +14,10 @@ const productSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    quantityAvailable:{
-        type:Number,
-        required:true
-    }
+    quantityAvailable: {
+      type: Number,
+      required: true,
+    },
   },
   {
     timestamps: true,
