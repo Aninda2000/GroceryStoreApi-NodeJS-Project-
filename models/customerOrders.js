@@ -2,12 +2,10 @@ const mongoose = require("mongoose");
 
 const customerOrderSchema = new mongoose.Schema(
   {
-    productList: [
-      {
-        type: mongoose.Schema.ObjectId,
-        ref: "product",
-      },
-    ],
+    productId: {
+      type: mongoose.Schema.ObjectId,
+      ref: "product",
+    },
     totalPrice: {
       type: Number,
       required: true,
