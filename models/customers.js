@@ -14,6 +14,12 @@ const customerSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    orders: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: "customerOrder",
+      },
+    ],
   },
   {
     timestamps: true,
